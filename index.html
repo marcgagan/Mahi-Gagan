@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hello Mahi ❤️</title>
+<style>
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  text-align: center;
+}
+.container {
+  background: white;
+  padding: 35px 22px;
+  border-radius: 22px;
+  width: 80%;
+  max-width: 350px;
+  box-shadow: 0 10px 30px #0003;
+}
+h1 { color: #ff4d79; }
+h2 { color: #444; }
+p { color: #666; }
+button {
+  background: #ff4d79;
+  color: white;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#surprise {
+  display: none;
+  color: #ff4081;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.heart {
+  position: fixed;
+  bottom: -30px;
+  animation: floatUp 4s linear forwards;
+  pointer-events: none;
+}
+@keyframes floatUp {
+  to { transform: translateY(-110vh); opacity: 0; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>❤️ Hello Mahi ❤️</h1>
+  <h2>Welcome to My World</h2>
+  <p>This little website is made specially for you.</p>
+  <button onclick="showLove()">💌 Open My Surprise</button>
+  <p id="surprise">❤️ Mahi, You are very special to me! 🌹 Love, Gagan ❤️</p>
+  <h3>With Love, Gagan 🌹</h3>
+</div>
+<script>
+function showLove() {
+  document.getElementById("surprise").style.display = "block";
+}
+setInterval(() => {
+  const heart = document.createElement("div");
+  heart.className = "heart";
+  heart.innerHTML = "❤️";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = "20px";
+  document.body.appendChild(heart);
+  setTimeout(() => heart.remove(), 4000);
+}, 700);
+</script>
+</body>
+</html>
