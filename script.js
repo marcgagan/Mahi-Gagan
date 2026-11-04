@@ -113,7 +113,7 @@ if (revealBtn) {
     // TYPEWRITER MESSAGE
     // ==============================
 
-    const loveMessage = `Dear Kanika,
+    const loveMessage = `Dear Mahi,
 
 Some people enter our lives and make ordinary moments feel special.
 
@@ -226,7 +226,7 @@ Keep smiling, keep shining, and never forget how amazing you are.
             const phoneNumber = "917484993096";
 
             const whatsappMessage =
-                "Kanika Website Message 💗\n\n" + userMessage;
+                "Mahi Website Message 💗\n\n" + userMessage;
 
             const whatsappURL =
                 "https://wa.me/" +
