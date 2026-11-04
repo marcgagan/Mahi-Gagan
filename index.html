@@ -3,78 +3,193 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hello Mahi ❤️</title>
+<title>MAHI TAMTAM💗</title>
 <style>
-body {
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(135deg, #ff758c, #ff7eb3);
-  font-family: Arial, sans-serif;
-  overflow: hidden;
-  text-align: center;
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;color:#fff1f7;font-family:Arial,sans-serif;
+ background:radial-gradient(ellipse at 50% 20%,#48142f,#260b1b 48%,#160710);
+ overflow-x:hidden
 }
-.container {
-  background: white;
-  padding: 35px 22px;
-  border-radius: 22px;
-  width: 80%;
-  max-width: 350px;
-  box-shadow: 0 10px 30px #0003;
-}
-h1 { color: #ff4d79; }
-h2 { color: #444; }
-p { color: #666; }
-button {
-  background: #ff4d79;
-  color: white;
-  border: none;
-  padding: 14px 22px;
-  border-radius: 30px;
-  font-size: 16px;
-  cursor: pointer;
-}
-#surprise {
-  display: none;
-  color: #ff4081;
-  font-weight: bold;
-  margin-top: 20px;
-}
-.heart {
-  position: fixed;
-  bottom: -30px;
-  animation: floatUp 4s linear forwards;
-  pointer-events: none;
-}
-@keyframes floatUp {
-  to { transform: translateY(-110vh); opacity: 0; }
+button,textarea{font:inherit}
+button{cursor:pointer}
+.brand{position:absolute;top:24px;left:22px;font:30px Georgia,serif}
+.music{position:absolute;right:18px;top:18px;border:1px solid #ffffff33;border-radius:40px;padding:13px 18px;background:#ffffff0b;color:#f6c6d9}
+section{position:relative;padding:95px 22px;max-width:760px;margin:auto;text-align:center}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding-top:110px}
+.pill{border:1px solid #ffffff33;border-radius:40px;padding:14px 22px;color:#f28db7;font-size:13px;font-weight:bold;letter-spacing:5px}
+.bigheart{font-size:76px;color:#ff83b4;margin:45px 0 12px}
+.hey{font:italic 38px Georgia,serif;color:#c7a5b7;margin:0 0 22px}
+h1{font:clamp(44px,9vw,72px)/1.05 Georgia,serif;font-weight:400;margin:0 0 36px}
+h1 em,.last h2 em{color:#ff80b1}
+.lead{font-size:19px;line-height:2;color:#c9aeba;max-width:610px;margin:0 auto 52px}
+.primary{border:0;border-radius:60px;padding:22px 30px;background:linear-gradient(100deg,#ff80b1,#ff4f91);color:#321024;font-weight:700;font-size:19px;box-shadow:0 12px 35px #ff4f9140}
+.smallnote{color:#b994a7;letter-spacing:1px;margin-top:28px}
+.further{margin-top:75px;color:#a77b91;letter-spacing:3px}
+.eyebrow{color:#f17eac;letter-spacing:5px;font-size:14px;font-weight:bold;margin-bottom:40px}
+.letter,.special,.message-card{background:#ffffff0d;border:1px solid #ffffff33;border-radius:28px}
+.letter{padding:42px 34px;text-align:left}
+.envelope{font-size:42px;margin-bottom:28px}
+.dear{font:italic 40px Georgia,serif;color:#f58bb8;margin:0 0 24px}
+.letter h2{font:clamp(32px,6vw,48px)/1.18 Georgia,serif;font-weight:400;margin:0 0 34px}
+.letter p{font-size:18px;line-height:2.05;color:#d2b9c6;text-align:center;margin:12px 0}
+.signature{border-top:1px solid #ffffff33;padding-top:26px;margin-top:45px!important;font:italic 30px Georgia,serif!important;color:#f4bfd5!important;text-align:left!important}
+.last h2{font:clamp(38px,8vw,60px)/1.15 Georgia,serif;font-weight:400}
+.hugline{font:italic 30px Georgia,serif;color:#f1c2d7;margin:60px 0 30px}
+.quote{font:italic 34px/1.5 Georgia,serif;color:#f3c5d9;margin:70px auto 85px;max-width:650px}
+footer{border-top:1px solid #ffffff22;padding:50px 20px 80px;color:#c8a8b8}
+footer .sub{font-size:14px;color:#9f7f91}
+.outline{width:min(100%,540px);border:1px solid #a94b78;border-radius:60px;padding:20px;background:#ffffff08;color:#f4c4d8;font-size:22px;font-weight:bold}
+.special{padding:38px 25px;margin:0 auto 30px}
+.special .heart{font-size:70px}
+.special h2{font:clamp(32px,6vw,48px)/1.2 Georgia,serif;font-weight:400}
+.special p{font-size:19px;color:#d5b8c7}
+.friend{border:0;border-radius:45px;padding:18px 32px;background:linear-gradient(100deg,#ffe0cb,#ffc4a6);font-size:20px;font-weight:bold;color:#4a2034;margin:25px 0}
+.happy{font-weight:bold;color:#ffd0e2;margin-top:32px}
+.no{border:1px solid #ffffff33;background:#ffffff08;color:#f4c4d8;border-radius:50px;padding:18px 42px;font-weight:bold}
+.message-card{padding:32px 25px}
+.message-card h2{font:36px Georgia,serif}
+.message-card p{font-size:19px;color:#d5b8c7}
+textarea{width:100%;min-height:190px;margin:24px 0 20px;padding:22px;border-radius:22px;border:1px solid #9f5879;background:#ffffff0b;color:white;resize:vertical;font-size:18px}
+textarea::placeholder{color:#c6a8b7}
+.send{width:100%}
+.heartfloat{position:fixed;bottom:-35px;pointer-events:none;animation:rise linear forwards;color:#fa7eaf;opacity:.65}
+@keyframes rise{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+@media(max-width:480px){
+ .letter{padding:32px 24px}
+ .letter p{font-size:17px}
+ .primary{font-size:18px}
+ .quote{font-size:29px}
 }
 </style>
 </head>
 <body>
-<div class="container">
-  <h1>❤️ Hello Mahi ❤️</h1>
-  <h2>Welcome to My World</h2>
-  <p>This little website is made specially for you.</p>
-  <button onclick="showLove()">💌 Open My Surprise</button>
-  <p id="surprise">❤️ Mahi, You are very special to me! 🌹 Love, Gagan ❤️</p>
-  <h3>With Love, Gagan 🌹</h3>
-</div>
+<div class="brand">with <span style="color:#ff70a7">♥</span> love</div>
+<button class="music" id="musicBtn">♫ Play Music</button>
+
+<main>
+<section class="hero" id="home">
+ <div class="pill">• A LITTLE SOMETHING FOR YOU</div>
+ <div class="bigheart">♥</div>
+ <p class="hey">Hey, Mahi...</p>
+ <h1>You make my<br><em>world beautiful.</em></h1>
+ <p class="lead">Kuch baatein hoti hain jo words mein kehna mushkil hota hai... toh socha tumhare liye ek chhoti si duniya bana doon.💗</p>
+ <button class="primary" onclick="document.getElementById('letter').scrollIntoView({behavior:'smooth'})">Open your surprise　♡</button>
+ <p class="smallnote">Made with a little courage and a lot of heart.　♥</p>
+ <p class="further">│<br><br>A little further</p>
+</section>
+
+<section id="letter">
+ <div class="eyebrow">JUST FOR YOU</div>
+ <article class="letter">
+  <div class="envelope">💌</div>
+  <p class="dear" style="text-align:left">Dear Mahi,</p>
+  <h2>Some people make<br>ordinary days feel special.</h2>
+  <p>Pta nhi kya ki ho kon sa jaddu ki hoo tumse baat karna aacha lagta hai.</p>
+  <p>Tumhari smile, tumhari baatein aur tumhara</p>
+  <p>apna sa andaaz — ye sab chhoti chhoti cheezein</p>
+  <p>din ko thoda aur khoobsurat bana deti hain.</p>
+  <p>Shayad main har baat perfect tareeke se na keh paaun, lekin itna zaroor hai ki tum mere liye special ho. Isliye ye chhota sa surprise, sirf tumhare liye.❤️</p>
+  <p>You came into my life and changed everything.</p>
+  <p>I don’t take a single day with you for granted.</p>
+  <p>You are the reason I smile without even trying.</p>
+  <p>I love you more than any words could ever fully explain.</p>
+  <p class="signature">i wanted to make you smile　♥</p>
+ </article>
+</section>
+
+<section class="last">
+ <div style="font-size:66px;color:#ff80b1">♡</div>
+ <div class="eyebrow">ONE LAST THING</div>
+ <h2>Can I make you <em>smile?</em></h2>
+ <p class="lead">Agar is page ne tumhare face par ek chhoti si smile bhi la di, toh mera surprise successful hai.</p>
+ <button class="primary" id="happyBtn">Tap here for a little happiness ✨</button>
+ <p class="hugline" id="hugline"></p>
+ <p class="quote">Some people make a little corner of the world feel more beautiful. ❤️</p>
+ <footer>
+  <p>Crafted with <strong style="color:#ff80b1">Gagan ♥</strong> just for Mahi</p>
+  <p class="sub">A little page. A heartfelt thought.</p>
+  <br><br>
+  <button class="outline" onclick="document.getElementById('special').scrollIntoView({behavior:'smooth'})">Spical Card 💗</button>
+ </footer>
+</section>
+
+<section id="special">
+ <article class="special">
+  <div class="heart">💗</div>
+  <h2>Dyyumnaa Will you<br>be my partner? ❤️</h2>
+  <p>I have a little question for you...</p>
+  <button class="friend" id="friendBtn">Friends Forever 💖</button>
+  <p class="happy" id="happyText">Yayyy! ❤️ Gagan is now happy! 🥺💗</p>
+ </article>
+ <button class="no" id="noBtn">No 😈</button>
+</section>
+
+<section id="message">
+ <article class="message-card">
+  <h2>Kuch kehni hai? 💌</h2>
+  <p>Gagan ke liye apna message likho ❤️</p>
+  <textarea id="reply" placeholder="Apna message likho..."></textarea>
+  <button class="primary send" id="sendBtn">Send on WhatsApp 💚</button>
+ </article>
+</section>
+</main>
+
 <script>
-function showLove() {
-  document.getElementById("surprise").style.display = "block";
+const waNumber="918298075544";
+
+document.getElementById("sendBtn").onclick=()=>{
+ const msg=document.getElementById("reply").value.trim();
+ if(!msg){alert("Pehle apna message likho ❤️");return;}
+ window.open("https://wa.me/"+waNumber+"?text="+encodeURIComponent(msg),"_blank");
+};
+
+function makeHeart(){
+ const h=document.createElement("span");
+ h.className="heartfloat";
+ h.textContent=Math.random()>.5?"♥":"♡";
+ h.style.left=Math.random()*100+"vw";
+ h.style.fontSize=(14+Math.random()*24)+"px";
+ h.style.animationDuration=(4+Math.random()*4)+"s";
+ document.body.appendChild(h);
+ setTimeout(()=>h.remove(),8500);
 }
-setInterval(() => {
-  const heart = document.createElement("div");
-  heart.className = "heart";
-  heart.innerHTML = "❤️";
-  heart.style.left = Math.random() * 100 + "vw";
-  heart.style.fontSize = "20px";
-  document.body.appendChild(heart);
-  setTimeout(() => heart.remove(), 4000);
-}, 700);
+setInterval(makeHeart,650);
+
+document.getElementById("happyBtn").onclick=()=>{
+ document.getElementById("hugline").textContent="Sending you a little virtual hug. 🫶";
+ for(let i=0;i<24;i++)makeHeart();
+};
+
+document.getElementById("friendBtn").onclick=()=>{
+ document.getElementById("happyText").textContent="Yayyy! ❤️ Gagan is now happy! 🥺💗";
+ for(let i=0;i<18;i++)makeHeart();
+};
+
+document.getElementById("noBtn").onclick=()=>{
+ document.getElementById("happyText").textContent="Aww, ek baar phir soch lo! 🥺💗";
+};
+
+let audioCtx,osc,playing=false;
+document.getElementById("musicBtn").onclick=()=>{
+ const btn=document.getElementById("musicBtn");
+ if(!playing){
+  try{
+   audioCtx=new(window.AudioContext||window.webkitAudioContext)();
+   osc=audioCtx.createOscillator();
+   const gain=audioCtx.createGain();
+   osc.type="sine";osc.frequency.value=261.63;
+   gain.gain.value=.025;
+   osc.connect(gain);gain.connect(audioCtx.destination);osc.start();
+   playing=true;btn.textContent="♫ Music On";
+  }catch(e){btn.textContent="♫ Music unavailable";}
+ }else{
+  osc.stop();audioCtx.close();playing=false;
+  btn.textContent="♫ Play Music";
+ }
+};
 </script>
 </body>
 </html>
+
