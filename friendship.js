@@ -4,8 +4,8 @@ const noBtn = document.getElementById("no");
 const message = document.getElementById("message");
 
 yesBtn.addEventListener("click", () => {
-  message.textContent = "Yayyy! ❤️ tushar is now happy! 🥹💗";
-  yesBtn.textContent = "Friends Forever 💖";
+  message.textContent = "Yayyy! ❤️ GAGAN is now happy! 🥹💗";
+  yesBtn.textContent = "YOUR PARTNER Forever 💖";
 });
 
 function moveButton() {
